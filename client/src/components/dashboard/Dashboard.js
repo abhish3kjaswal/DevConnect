@@ -21,10 +21,12 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <h1 className='large text-primary'>Dashboard</h1>
-      <p className='lead'>
-        <i className='fas fa-user '></i> <b> Welcome {user && user.name}</b>
-      </p>
+      <div class='profile-top bg-primary p-2'>
+        <i className='large fas fa-user '></i>
+        <p className='lead'>
+          <b> Welcome {user && user.name}</b>
+        </p>
+      </div>
       {profile !== null ? (
         <Fragment>
           <DashboardActions />

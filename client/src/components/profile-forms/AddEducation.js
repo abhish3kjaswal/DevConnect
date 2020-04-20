@@ -32,6 +32,9 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
+      <Link class='btn btn-light my-1' to='/dashboard'>
+        Back to Dashboard
+      </Link>
       <h1 class='large text-primary'>Add Your Education</h1>
       <p class='lead'>
         <i class='fas fa-code-branch'></i> Add any School or college you have

@@ -24,6 +24,9 @@ const AddExperience = ({ addExperience, history }) => {
 
   return (
     <Fragment>
+      <Link class='btn btn-light my-1' to='/dashboard'>
+        Back to Dashboard
+      </Link>
       <h1 class='large text-primary'>Add An Experience</h1>
       <p class='lead'>
         <i class='fas fa-code-branch'></i> Add any developer/programming
