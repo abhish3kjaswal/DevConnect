@@ -54,6 +54,9 @@ const Login = ({ login, isAuthenticated }) => {
       </form>
       <p className='my-1'>
         Don't have an account? <Link to='/register'>Sign up</Link>
+        <div>
+          Forgot Password? <Link to='/reset'>Click here</Link>
+        </div>
       </p>
     </Fragment>
   );

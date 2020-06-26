@@ -17,15 +17,22 @@ const Dashboard = ({
   useEffect(() => {
     getCurrentProfile();
   }, [getCurrentProfile]);
+
   return loading && profile === null ? (
     <Spinner />
   ) : (
     <Fragment>
-      <div class='profile-top bg-primary p-2'>
-        <i className='large fas fa-user '></i>
-        <p className='lead'>
-          <b> Welcome {user && user.name}</b>
-        </p>
+      <div class='profile-top bg-primary p-2' class='box'>
+        <div className='my-1'>
+          {' '}
+          <img class='round-img' class='imgb' src={user.avatar} alt='' />
+        </div>
+        <div>
+          {' '}
+          <p className='lead' style={{ color: 'white' }}>
+            <b> Welcome, {user && user.name}</b>
+          </p>
+        </div>
       </div>
       {profile !== null ? (
         <Fragment>
