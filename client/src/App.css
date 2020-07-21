@@ -1,10 +1,27 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
+  --primary-color: #3bb4c1;
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
+}
+
+.box {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #3bb4c1;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  height: 340px;
+  padding-top: 20px;
+  /* padding-left: 70px; */
+  text-align: center;
+}
+
+.imgb {
+  width: 200px;
+  border-radius: 50%;
 }
 
 * {
@@ -333,7 +350,7 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  background: url('./img/showcase.png') no-repeat center center/cover;
   height: 100vh;
 }
 
